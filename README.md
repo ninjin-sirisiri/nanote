@@ -19,6 +19,7 @@
 	<a href="https://github.com/ninjin-sirisiri/nanote">
     <img src="public/logo.png" alt="Logo" width="80" height="80">
   </a>
+  <br />
   <strong>A blazing-fast, featherweight note-taking app that makes you <em>want</em> to write.</strong>
   <br />
   <em>nano + note — infinitely small, infinitely fast.</em>
