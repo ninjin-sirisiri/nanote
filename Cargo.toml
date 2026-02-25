@@ -1,0 +1,29 @@
+[package]
+name = "nanote"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.102"
+gpui = "0.2.2"
+gpui-component = "0.5.1"
+# Optional, for default bundled assets
+gpui-component-assets = "0.5.1"
+
+[build-dependencies]
+winresource = "0.1.30"
+
+[package.metadata.packager]
+product-name = "nanote"
+identifier = "nanote"
+version = "0.1.0"
+out-dir = "dist"
+icons = ["icons/icon.png"]
+
+before-packaging-command = "cargo build --release"
+
+formats=["wix"]
+
+[package.metadata.packager.wix]
+dialog-image-path = "assets/installer-dialog.bmp"
+banner-path = "assets/installer-banner.bmp"
